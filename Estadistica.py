@@ -19,4 +19,4 @@ class Estadistica:
                     maximo =int(numero)
 
 
-            return [cantidad,int(minimo),int(maximo),0]
+            return [cantidad,int(minimo),int(maximo),3]
