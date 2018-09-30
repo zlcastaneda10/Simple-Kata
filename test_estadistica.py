@@ -41,3 +41,5 @@ class TestEstadistica(TestCase):
     def test_dar_estadistica_promedio_vacio(self):
         self.assertEqual(Estadistica().dar_estadistica(""), [0, 0, 0, 0], "cadena vacia")
 
+    def test_dar_estadistica_promedio_unnumero(self):
+        self.assertEqual(Estadistica().dar_estadistica("3"), [1, 3, 3, 3], "promedio un numero")
