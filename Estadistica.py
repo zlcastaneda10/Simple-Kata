@@ -6,6 +6,9 @@ class Estadistica:
         else:
             cantidad = 0
             numeros = cadena.split(",")
+            minimo = int(numeros[0])
             for numero in numeros:
                 cantidad = cantidad + 1
-            return [cantidad,4,0,0]
+                if (int(numero) < minimo):
+                    minimo =numero
+            return [cantidad,int(minimo),0,0]
