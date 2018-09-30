@@ -7,8 +7,11 @@ class Estadistica:
             cantidad = 0
             numeros = cadena.split(",")
             minimo = int(numeros[0])
+            maximo = minimo
             for numero in numeros:
                 cantidad = cantidad + 1
                 if (int(numero) < minimo):
                     minimo =numero
-            return [cantidad,int(minimo),3,0]
+                if (int(numero) > maximo):
+                    maximo =numero
+            return [cantidad,int(minimo),int(maximo),0]
