@@ -11,4 +11,4 @@ class Estadistica:
                 cantidad = cantidad + 1
                 if (int(numero) < minimo):
                     minimo =numero
-            return [cantidad,int(minimo),0,0]
+            return [cantidad,int(minimo),3,0]
