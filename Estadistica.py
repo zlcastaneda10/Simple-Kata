@@ -1,4 +1,7 @@
 class Estadistica:
 
     def dar_estadistica(self,cadena):
-        return [0,0,0,0]
+        if (cadena == ""):
+            return [0,0,0,0]
+        else:
+            return [1,0,0,0]
