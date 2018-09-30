@@ -18,11 +18,11 @@ class TestEstadistica(TestCase):
         self.assertEqual(Estadistica().dar_estadistica(""), [0, 0, 0, 0], "cadena vacia")
 
     def test_dar_estadistica_minimo_unnumero(self):
-        self.assertEqual(Estadistica().dar_estadistica("4"), [1, 4, 0, 0], "cadena vacia")
+        self.assertEqual(Estadistica().dar_estadistica("4"), [1, 4, 0, 0], "Un numero")
 
-    def test_dar_estadistica_minimo_dosnumero(self):
+    def test_dar_estadistica_minimo_dosnumeroa(self):
         self.assertEqual(Estadistica().dar_estadistica("4,8"), [2, 4, 0, 0], "minimo dos numeros")
 
-    def test_dar_estadistica_maximo_vacio(self):
-        self.assertEqual(Estadistica().dar_estadistica(""), [0, 0, 0, 0], "cadena vacia")
+    def test_dar_estadistica_minimo_nnumeroa(self):
+        self.assertEqual(Estadistica().dar_estadistica("1,8,7,6"), [4, 1, 0, 0], "minimo N numeros")
 
