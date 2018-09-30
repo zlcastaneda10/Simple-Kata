@@ -4,4 +4,8 @@ class Estadistica:
         if (cadena == ""):
             return [0,0,0,0]
         else:
-            return [1,0,0,0]
+            cantidad = 0
+            numeros = cadena.split(",")
+            for numero in numeros:
+                cantidad = cantidad + 1
+            return [cantidad,0,0,0]
