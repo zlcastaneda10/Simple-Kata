@@ -6,12 +6,17 @@ class Estadistica:
         else:
             cantidad = 0
             numeros = cadena.split(",")
+
             minimo = int(numeros[0])
-            maximo = minimo
+            maximo = int(numeros[0])
             for numero in numeros:
+
                 cantidad = cantidad + 1
                 if (int(numero) < minimo):
-                    minimo =numero
+                    minimo = int(numero)
+
                 if (int(numero) > maximo):
-                    maximo =numero
+                    maximo =int(numero)
+
+
             return [cantidad,int(minimo),int(maximo),0]
