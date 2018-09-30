@@ -43,3 +43,6 @@ class TestEstadistica(TestCase):
 
     def test_dar_estadistica_promedio_unnumero(self):
         self.assertEqual(Estadistica().dar_estadistica("3"), [1, 3, 3, 3], "promedio un numero")
+
+    def test_dar_estadistica_promedio_dosnumeroa(self):
+        self.assertEqual(Estadistica().dar_estadistica("1,2"), [2, 1, 2, 1.5], "promedio dos numeros")
