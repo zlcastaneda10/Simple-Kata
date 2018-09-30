@@ -9,14 +9,16 @@ class Estadistica:
 
             minimo = int(numeros[0])
             maximo = int(numeros[0])
+            promedio = 0.0
             for numero in numeros:
 
                 cantidad = cantidad + 1
+                promedio = float(numero)+promedio
                 if (int(numero) < minimo):
                     minimo = int(numero)
 
                 if (int(numero) > maximo):
                     maximo =int(numero)
 
-
-            return [cantidad,int(minimo),int(maximo),3]
+            promedio = promedio / cantidad
+            return [cantidad,int(minimo),int(maximo),promedio]
