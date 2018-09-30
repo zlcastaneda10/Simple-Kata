@@ -38,3 +38,6 @@ class TestEstadistica(TestCase):
     def test_dar_estadistica_maximo_nnumeros(self):
         self.assertEqual(Estadistica().dar_estadistica("1,2,3,4"), [4, 1, 4, 0], "maximo N numeros")
 
+    def test_dar_estadistica_promedio_vacio(self):
+        self.assertEqual(Estadistica().dar_estadistica(""), [0, 0, 0, 0], "cadena vacia")
+
