@@ -1,4 +1,4 @@
 class Estadistica:
 
     def dar_estadistica(self,cadena):
-        pass
+        return [0,0,0,0]
